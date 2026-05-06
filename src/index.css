@@ -4,7 +4,28 @@
   src: url('./assets/fonts/YourFontFile.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: OswaldB;
+  src: url(/public/font/Oswald-Bold.ttf);
+}
 
+@font-face {
+  font-family: OswaldM;
+  src: url(/public/font/Oswald-Medium.ttf);
+}
+
+@font-face {
+  font-family: OswaldL;
+  src: url(/public/font/Oswald-Light.ttf);
+}
+
+header{
+  font-family: OswaldB;
+}
+
+.linksContainer{
+  font-family: OswaldM;
+}
 .cossette-texte-regular {
   font-family: "Cossette Texte", sans-serif;
   font-weight: 400;
