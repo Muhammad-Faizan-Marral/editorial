@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-     <header className="flex items-center justify-between  ">
+     <header className="flex items-center justify-between">
         <main className="flex items-center justify-between   h-[4rem]">
           <h1 className="text-xl px-4 w-[20rem]  ">
             EDITORIAL COMMISSION DESK
