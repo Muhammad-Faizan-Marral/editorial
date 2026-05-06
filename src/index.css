@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./assets/fonts/YourFontFile.woff2') format('woff2');
+}
+
+
+.cossette-texte-regular {
+  font-family: "Cossette Texte", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cossette-texte-bold {
+  font-family: "Cossette Texte", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
