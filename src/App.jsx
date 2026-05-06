@@ -17,10 +17,10 @@ const App = () => {
       <Header />
       <HeroSection />
       <Portfolios />
-      <TableSection/>
-      <FooterSection/>
       <ApprochSection/>
+      <TableSection/>
       <InquiryForm/>
+      <FooterSection/>
      </div>
   );
 };
