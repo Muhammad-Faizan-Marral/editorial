@@ -18,13 +18,28 @@
   font-family: OswaldL;
   src: url(/public/font/Oswald-Light.ttf);
 }
-
+html,body{
+  font-family:OswaldL ;
+}
 header{
   font-family: OswaldB;
 }
 
-.linksContainer{
+button{
   font-family: OswaldM;
+}
+
+.linksContainer{
+  font-family: OswaldB;
+}
+
+.bigFont{
+  font-family: OswaldB;
+  line-height: .9;
+}
+
+.num{
+    font-family: OswaldB;
 }
 .cossette-texte-regular {
   font-family: "Cossette Texte", sans-serif;

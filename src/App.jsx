@@ -1,14 +1,15 @@
 import React from 'react'
 import Header from './components/Header'
 import Portfolios from './components/Portfolios'
+import HeroSection from './components/HeroSection'
+
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='bg-white h-screen'>
       <Header/>
-      <Portfolios/>
-    </div>
-  )
-}
+      <HeroSection/>
+       <Portfolios/>
+
 
 export default App
