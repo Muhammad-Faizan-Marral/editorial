@@ -57,3 +57,38 @@ button{
   @apply flex items-center justify-between;
 }
 
+.table{
+  font-family: OswaldL;
+
+
+}
+
+.table td{
+  border:3px solid black;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  width:20%;
+  padding: 16px 0;
+  text-align: left;
+ }
+
+
+
+.table th{
+  border:3px solid rgb(33, 32, 32);
+  padding: 10px;
+  font-size: 10px;
+  font-family: OswaldM;
+  color: white;
+  background-color: black;
+ font-weight: 400;
+ width:20%;
+ text-align: left;
+}
+
+ .table td strong{
+  font-weight: 600;
+  font-family: OswaldB;
+  font-size: 14px;
+ }
