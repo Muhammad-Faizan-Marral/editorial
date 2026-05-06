@@ -30,7 +30,7 @@ const Portfolios = () => {
               <div className="absolute inset-0 flex items-end justify-start bg-red-600/90 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <div className="flex w-full items-center justify-between text-white">
                   <div>
-                    <h3 className="text-2xl font-black leading-tight tracking-tighter">
+                    <h3 className="text-xl font-black leading-tight font-extrabold">
                       DE STIJL ISSUE
                     </h3>
                     <p className="text-xs font-medium tracking-[0.2em] uppercase">
@@ -80,11 +80,11 @@ const Portfolios = () => {
               <div className="absolute inset-0 flex items-end justify-start bg-red-600/90 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <div className="flex w-full items-center justify-between text-white">
                   <div>
-                    <h3 className="text-2xl font-black leading-tight tracking-tighter">
-                      DE STIJL ISSUE
+                    <h3 className="text-xl font-black leading-tight font-extrabold">
+                      DECONSTRUCT FLUX
                     </h3>
                     <p className="text-xs font-medium tracking-[0.2em] uppercase">
-                      Luxury Magazine
+                      EXPERIMENTAL FORM
                     </p>
                   </div>
 
@@ -111,7 +111,7 @@ const Portfolios = () => {
 
             {/* Bottom Bar */}
             <div className="bottomDiv flex items-center justify-between border-t-4 border-black bg-white px-5 py-1 font-bold uppercase tracking-widest text-black">
-              <div> Editorial</div>
+              <div> Brand Identity</div>
               <div className="text-gray-500 font-sm"> 02</div>
             </div>
           </div>
@@ -131,11 +131,11 @@ const Portfolios = () => {
               <div className="absolute inset-0 flex items-end justify-start bg-red-600/90 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <div className="flex w-full items-center justify-between text-white">
                   <div>
-                    <h3 className="text-2xl font-black leading-tight tracking-tighter">
-                      DE STIJL ISSUE
+                    <h3 className="text-xl font-black leading-tight font-extrabold">
+                      STRUCTURAL ELEGANCE
                     </h3>
                     <p className="text-xs font-medium tracking-[0.2em] uppercase">
-                      Luxury Magazine
+                      VOGUE ITALIA
                     </p>
                   </div>
 
@@ -162,7 +162,7 @@ const Portfolios = () => {
 
             {/* Bottom Bar */}
             <div className="bottomDiv flex items-center justify-between border-t-4 border-black bg-white px-5 py-1 font-bold uppercase tracking-widest text-black">
-              <div> Editorial</div>
+              <div> Fashion Illustration</div>
               <div className="text-gray-500 font-sm"> 03</div>
             </div>
           </div>
@@ -186,11 +186,11 @@ const Portfolios = () => {
               <div className="absolute inset-0 flex items-end justify-start bg-red-600/90 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <div className="flex w-full items-center justify-between text-white">
                   <div>
-                    <h3 className="text-2xl font-black leading-tight tracking-tighter">
-                      DE STIJL ISSUE
+                    <h3 className="text-xl font-black leading-tight font-extrabold">
+                      GRID & FORM
                     </h3>
                     <p className="text-xs font-medium tracking-[0.2em] uppercase">
-                      Luxury Magazine
+                     SWISS DESIGN WEEK
                     </p>
                   </div>
 
@@ -217,8 +217,8 @@ const Portfolios = () => {
 
             {/* Bottom Bar */}
             <div className="bottomDiv flex items-start pt-4 justify-between border-t-4 border-black bg-white px-5 h-[11rem] font-bold uppercase tracking-widest text-black">
-              <div className=""> Editorial</div>
-              <div className="text-gray-500 font-sm"> 03</div>
+              <div className=""> Packaging</div>
+              <div className="text-gray-500 font-sm"> 04</div>
             </div>
           </div>
 
@@ -236,11 +236,11 @@ const Portfolios = () => {
               <div className="absolute inset-0 flex items-end justify-start bg-red-600/90 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <div className="flex w-full items-center justify-between text-white">
                   <div>
-                    <h3 className="text-2xl font-black leading-tight tracking-tighter">
-                      DE STIJL ISSUE
+                    <h3 className="text-xl font-black leading-tight font-extrabold">
+                    IMPACT MOTION
                     </h3>
                     <p className="text-xs font-medium tracking-[0.2em] uppercase">
-                      Luxury Magazine
+                    KINETIC STUDIOS
                     </p>
                   </div>
 
@@ -267,8 +267,8 @@ const Portfolios = () => {
 
             {/* Bottom Bar */}
             <div className="bottomDiv flex items-center justify-between border-t-4 border-black bg-white px-5 py-1 font-bold uppercase tracking-widest text-black">
-              <div> Editorial</div>
-              <div className="text-gray-500 font-sm"> 01</div>
+              <div> Motion Design</div>
+              <div className="text-gray-500 font-sm"> 05</div>
             </div>
           </div>
 
@@ -289,11 +289,11 @@ const Portfolios = () => {
               <div className="absolute inset-0 flex items-end justify-start bg-red-600/90 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <div className="flex w-full items-center justify-between text-white">
                   <div>
-                    <h3 className="text-2xl font-black leading-tight tracking-tighter">
-                      DE STIJL ISSUE
+                    <h3 className="text-xl font-black leading-tight font-extrabold">
+                      PRISM WILD
                     </h3>
                     <p className="text-xs font-medium tracking-[0.2em] uppercase">
-                      Luxury Magazine
+                      NATURE PRESS
                     </p>
                   </div>
 
@@ -320,8 +320,8 @@ const Portfolios = () => {
 
             {/* Bottom Bar */}
             <div className="bottomDiv flex items-center justify-between border-t-4 border-black bg-white px-5 py-1 font-bold uppercase tracking-widest text-black">
-              <div> Editorial</div>
-              <div className="text-gray-500 font-sm"> 01</div>
+              <div>Publishing</div>
+              <div className="text-gray-500 font-sm"> 06</div>
             </div>
           </div>
 
