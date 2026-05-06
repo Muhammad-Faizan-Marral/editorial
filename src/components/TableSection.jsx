@@ -1,7 +1,7 @@
 import React from "react";
 
 const TableSection = () => {
-    const artists = [
+  const artists = [
     { name: "ELENA VASQUEZ", discipline: "Editorial Illustration", status: "Available", availability: "Immediate", specialties: ["PORTRAITS", "POLITICAL", "NARRATIVE"] },
     { name: "MARCUS CHEN", discipline: "Motion & Kinetic Type", status: "Booked", availability: "April 2026", specialties: ["ANIMATION", "TYPOGRAPHY", "SOCIAL"] },
     { name: "SOPHIE ANDERSSON", discipline: "Brand Identity & Packaging", status: "Available", availability: "Immediate", specialties: ["IDENTITY", "PACKAGING", "PRINT"] },
@@ -10,51 +10,90 @@ const TableSection = () => {
     { name: "AMARA DIOP", discipline: "Publishing & Book Arts", status: "Booked", availability: "May 2026", specialties: ["COVERS", "INTERIOR", "TYPOGRAPHY"] },
   ];
 
+  // Status ke hisaab se dot color return karne ka function
+  const getStatusColor = (status) => {
+    switch (status) {
+      case "Available": return "bg-green-500";
+      case "Booked": return "bg-red-500";
+      case "Limited": return "bg-yellow-400";
+      default: return "bg-gray-500";
+    }
+  };
+
   return (
-    <div className="pl-12 pr-12 h-[70%] w-full ">
-    <div className=" h-full w-full ">
+    // Fixed height h-[70%] hata di hai, padding adjust ki mobile ke liye
+    <div className="px-4 md:px-12 py-16 w-full">
+      <div className="w-full">
         
-        <div className="mt-10 mb-10 leading-3">
-          <h4 className="text-[12px] font-bold text-[red] tracking-widest">Active Talent</h4>
-          <h2 className="text-5xl font-extrabold font-[OswaldB]">ROSTER</h2>
+        <div className="mb-8 md:mb-10 flex flex-col gap-1">
+          <h4 className="text-[12px] font-bold text-[red] tracking-widest uppercase">Active Talent</h4>
+          <h2 className="text-4xl md:text-5xl font-extrabold font-[OswaldB] uppercase">ROSTER</h2>
         </div>
         
-          <table className="w-full border border-black table cursor-pointer">
-            <thead className="border border-black ">
+        {/* Mobile Scrolling Wrapper - Isse table layout nahi tootega */}
+        <div className="w-full overflow-x-auto border-[3px] border-black bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+          {/* min-w set ki taaki shrink hoke ugly na lage */}
+          <table className="w-full min-w-[900px] text-left border-collapse cursor-pointer">
+            
+            <thead className="border-b-[3px] border-black bg-gray-100">
               <tr>
-          <th>ARTIST</th>
-          <th>DISCIPLINE</th>
-          <th>STATUS</th>
-          <th>AVAILABILITY</th>
-          <th>SPECIALTIES</th>
+                <th className="p-4 border-r-[3px] border-black font-extrabold tracking-wider">ARTIST</th>
+                <th className="p-4 border-r-[3px] border-black font-extrabold tracking-wider">DISCIPLINE</th>
+                <th className="p-4 border-r-[3px] border-black font-extrabold tracking-wider">STATUS</th>
+                <th className="p-4 border-r-[3px] border-black font-extrabold tracking-wider">AVAILABILITY</th>
+                <th className="p-4 font-extrabold tracking-wider">SPECIALTIES</th>
               </tr>
             </thead>
-            <tbody >
-        {artists.map((artist, index) => (
-          <tr key={index} className="border border-black hover:bg-[#F9FE01] transition-all duration-300 ease-in-out">
-            <td><strong>{artist.name}</strong></td>
-            <td >{artist.discipline}</td>
-            <td>
-              <span></span> {artist.status}
-            </td>
-            <td>
-              <span className="bg-[#fef2f2] pl-2 pr-2">{artist.availability}</span>
-            </td>
-            <td className="p-0">
-              {artist.specialties.map((specialty, i) => (
-                <span className="font-[12px]  pl-4 pr-4 ml-2 border border-black " key={i} >
-                  {specialty}
-                </span>
+            
+            <tbody>
+              {artists.map((artist, index) => (
+                <tr 
+                  key={index} 
+                  className="border-b-[3px] border-black last:border-b-0 hover:bg-[#F9FE01] transition-colors duration-200"
+                >
+                  <td className="p-4 border-r-[3px] border-black font-bold whitespace-nowrap">
+                    {artist.name}
+                  </td>
+                  
+                  <td className="p-4 border-r-[3px] border-black text-sm whitespace-nowrap">
+                    {artist.discipline}
+                  </td>
+                  
+                  <td className="p-4 border-r-[3px] border-black text-sm whitespace-nowrap">
+                    <div className="flex items-center gap-2">
+                      <span className={`w-3 h-3 rounded-full border border-black ${getStatusColor(artist.status)}`}></span>
+                      <span className="font-bold">{artist.status}</span>
+                    </div>
+                  </td>
+                  
+                  <td className="p-4 border-r-[3px] border-black whitespace-nowrap">
+                    <span className="bg-[#fef2f2] px-3 py-1 text-sm font-bold border border-black inline-block">
+                      {artist.availability}
+                    </span>
+                  </td>
+                  
+                  <td className="p-4">
+                    {/* Tags ko flex-wrap de diya taaki lambe hone pe theek se align ho */}
+                    <div className="flex flex-wrap gap-2">
+                      {artist.specialties.map((specialty, i) => (
+                        <span 
+                          className="text-[10px] font-bold px-2 py-1 border-[2px] border-black bg-white uppercase tracking-wider" 
+                          key={i} 
+                        >
+                          {specialty}
+                        </span>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
               ))}
-            </td>
-          </tr>
-        ))}
-      </tbody>
+            </tbody>
+            
           </table>
-    </div>
         </div>
-      
-   
+
+      </div>
+    </div>
   );
 };
 
