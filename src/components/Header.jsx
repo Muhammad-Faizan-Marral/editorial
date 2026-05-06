@@ -9,7 +9,7 @@ const Header = () => {
             EDITORIAL COMMISSION DESK
           </h1>
 
-          <div className=" linksContainer uppercase  flex items-center justify-betweentext-center text-sm  h-full pl-[3.5rem]">
+          <div className=" linksContainer uppercase  flex items-center justify-between text-center text-sm  h-full pl-[3.5rem]">
             <div className="flex items-center justify-center  h-full w-full">
               <div className="border-l-3 border-black h-full"></div>
               <a
