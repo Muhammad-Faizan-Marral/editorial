@@ -14,7 +14,7 @@ const Header = () => {
               <div className="border-l-3 border-black h-full"></div>
               <a
                 href="http://"
-                className=" hover:bg-yellow-500 flex items-center justify-center h-full w-43 "
+                className="hover:bg-[#f9fe01] flex items-center justify-center h-full w-43 "
               >
                 Work
               </a>
@@ -24,7 +24,7 @@ const Header = () => {
               <div className="border-l-3 border-black h-full"></div>
               <a
                 href="http://"
-                className=" hover:bg-yellow-500 flex items-center justify-center h-full w-43 "
+                className="hover:bg-[#f9fe01] flex items-center justify-center h-full w-43 "
               >
                 Process
               </a>
@@ -35,7 +35,7 @@ const Header = () => {
               <div className="border-l-3 border-black h-full"></div>
               <a
                 href="http://"
-                className=" hover:bg-yellow-500 flex items-center justify-center h-full w-43 "
+                className="hover:bg-[#f9fe01] flex items-center justify-center h-full w-43 "
               >
                 roaster
               </a>
@@ -45,7 +45,7 @@ const Header = () => {
               <div className="border-l-3 border-black h-full"></div>
               <a
                 href="http://"
-                className=" hover:bg-yellow-500 flex items-center justify-center h-full w-43 "
+                className=" hover:bg-[#f9fe01] flex items-center justify-center h-full w-43 "
               >
                 inquery
               </a>
